@@ -1,0 +1,40 @@
+import os
+from dotenv import load_dotenv
+from pathlib import Path
+
+load_dotenv()
+
+DISCORD_BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN")
+ADMIN_ROLE_ID = os.getenv("ADMIN_ROLE_ID", "")
+GUILD_ID = os.getenv("GUILD_ID", "")
+
+BASE_DIR = Path(__file__).parent
+DB_DIR = BASE_DIR / "data"
+DB_DIR.mkdir(exist_ok=True)
+SQLITE_DB_PATH = str(DB_DIR / "eumenes.db")
+
+TRUST_CONFIRM_BONUS = 2
+TRUST_REJECT_PENALTY = 5
+TRUST_DISPUTE_PENALTY = 20
+TRUST_FAKE_RECEIPT_PENALTY = 50
+TRUST_DECAY_DAYS = 90
+TRUST_DECAY_AMOUNT = 10
+TRUST_MAX_FLOOR = 0
+
+AUTO_CONFIRM_THRESHOLD = 70
+
+TRUST_MODE = "local"
+
+REJECTION_RATE_HIGH = 0.6
+REJECTION_RATE_LOW = 0.1
+REJECTION_WEIGHT_HIGH = 0.0
+REJECTION_WEIGHT_LOW = 2.0
+
+HF_TOKEN = os.getenv("HF_TOKEN", "")
+HF_BACKUP_REPO = os.getenv("HF_BACKUP_REPO", "")
+HF_BACKUP_INTERVAL = int(os.getenv("HF_BACKUP_INTERVAL", "300"))
+
+HEALTH_PORT = int(os.getenv("HEALTH_PORT", "7860"))
+
+CLOUDFLARE_WORKERS_TOKEN = os.getenv("CLOUDFLARE_WORKERS_TOKEN", "")
+CLOUDFLARE_PROXY_URL = os.getenv("CLOUDFLARE_PROXY_URL", "")
