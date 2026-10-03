@@ -7,8 +7,11 @@
 </div>
 
 <div align="center">
-  <video src="eumenes demo.mp4" controls width="640" muted></video>
-  <p><em>Demo: Receipt upload → OCR parsing → Merchant confirmation → Code delivery</em></p>
+
+![Buyer receives a product code by DM or in the Discord channel](buyer-receives-code.mp4)
+
+*Buyer receives a product code by DM or in the Discord channel*
+
 </div>
 
 > **Note:** This is a personal portfolio project. Sensitive data (tokens, keys, credentials) has been removed from the repository. Do not deploy this code as-is without adding your own secrets and reviewing security configurations.
