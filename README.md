@@ -7,11 +7,8 @@
 </div>
 
 <div align="center">
-
-![Buyer receives a product code by DM or in the Discord channel](buyer-receives-code.mp4)
-
-*Buyer receives a product code by DM or in the Discord channel*
-
+  <img src="buyer-receives-code.gif" alt="Buyer receives a product code by DM or in the Discord channel" width="720" />
+  <p><em>Buyer receives a product code by DM or in the Discord channel</em></p>
 </div>
 
 > **Note:** This is a personal portfolio project. Sensitive data (tokens, keys, credentials) has been removed from the repository. Do not deploy this code as-is without adding your own secrets and reviewing security configurations.
